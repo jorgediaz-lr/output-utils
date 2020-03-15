@@ -225,6 +225,7 @@ public class OutputUtils {
 			String linkStartTag = "<a href=\"#\"" + onClick + " >";
 
 			String linkMoreEndTag;
+
 			if (maxSize == 0) {
 				linkMoreEndTag = "click to display</a>";
 			}
@@ -311,7 +312,6 @@ public class OutputUtils {
 	}
 
 	public static String getCSVRow(List<String> rowData, String sep) {
-
 		String row = StringPool.BLANK;
 
 		for (String aux : rowData) {
@@ -334,8 +334,8 @@ public class OutputUtils {
 	}
 
 	public static FileEntry getPortletFileEntry(
-		Repository repository, String title)
-			throws PortalException, SystemException {
+			Repository repository, String title)
+		throws PortalException, SystemException {
 
 		return PortletFileRepositoryUtil.getPortletFileEntry(
 			repository.getGroupId(), repository.getDlFolderId(), title);
@@ -362,7 +362,6 @@ public class OutputUtils {
 	}
 
 	public static String listStringToString(List<String> out) {
-
 		if (Validator.isNull(out)) {
 			return null;
 		}
